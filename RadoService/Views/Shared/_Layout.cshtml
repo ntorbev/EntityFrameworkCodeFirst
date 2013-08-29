@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/modernizr")
+         @Scripts.Render("~/bundles/PingPong")
+
+    </head>
+    <body>
+        <div class="page">
+        <header>
+            <div class="content-wrapper">
+                <div>
+                    <p class="title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <div class="clear"></div>
+                 </div>
+                <div>                    
+                    <nav id="topNav">
+                        <ul >
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("clients", "list", "clients")</li>
+                            <li><a>Games</a>
+                                <ul  style="z-index:9999">
+                                    <li>@Html.ActionLink("PingPong", "PingPong", "Home")</li>
+                                    <li style="white-space:nowrap">@Html.ActionLink("MindStorm", "MindStorm", "Home")</li>                   
+                                    @*<li>@Html.ActionLink("LocalStorage", "LocalStorage", "Home")</li>*@
+                                </ul>
+                            </li>
+                            @if (User.Identity.Name == "rado")
+                            { 
+                                <li>@Html.ActionLink("Offer", "Index", "Default1", new { area = "Admin" }, null)</li> 
+                            }
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="clear"></div> 
+            </div>
+            <div class="clear"></div>
+            
+        </header>
+        <div id="body" style="height:480px">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application(developing by Nikolay Torbev)</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+            </div>
+        @Scripts.Render("~/bundles/menuJQuery")
+    </body>
+</html>

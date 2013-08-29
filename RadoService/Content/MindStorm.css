@@ -1,0 +1,80 @@
+﻿.randomDiv{
+   border-radius:5px 5px 5px 5px;
+   background-color:yellow;
+   display:inline-block;
+   margin:10px;
+   width: 74px;
+   height: 99px;
+}
+.replacer {
+   display:inline-block;
+   margin:10px;
+   width: 74px;
+   height: 99px;
+   background:green;
+}
+#card0{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) 0 0;
+}
+#card1{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -73px 0;
+}
+#card2{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -146px 0;
+}
+#card3{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -219px 0;
+}
+#card4{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -292px 0;
+}
+#card5{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -365px 0;
+}
+#card6{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -438px 0;
+}
+#card7{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -511px 0;
+}
+#card8{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -584px 0;
+}
+#card9{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -657px 0;
+}
+#card10{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -730px 0;
+}
+#card11{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -803px 0;
+}
+#card12{
+	width: 74px;
+	height: 99px;
+	background: url(classic-playing-cards.png) -877px 0;
+}

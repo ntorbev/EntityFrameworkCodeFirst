@@ -1,0 +1,7 @@
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\bin\Debug\RadoService.DAl.dll.config
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\bin\Debug\RadoService.DAl.dll
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\bin\Debug\RadoService.DAl.pdb
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\bin\Debug\EntityFramework.dll
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\bin\Debug\EntityFramework.xml
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\obj\Debug\RadoService.DAl.dll
+C:\Users\Violeta\documents\visual studio 2012\Projects\RadoService\RadoService.DAl\obj\Debug\RadoService.DAl.pdb

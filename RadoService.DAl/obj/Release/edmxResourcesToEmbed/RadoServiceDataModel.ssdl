@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RadoServiseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="RadoServiseModelStoreContainer">
+    <EntitySet Name="aspnet_Users" EntityType="RadoServiseModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Client" EntityType="RadoServiseModel.Store.Client" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="firstName" Type="nchar" MaxLength="10" />
+    <Property Name="lastName" Type="nchar" MaxLength="10" />
+    <Property Name="address" Type="nchar" MaxLength="10" />
+    <Property Name="age" Type="int" />
+    <Property Name="phone" Type="int" />
+    <Property Name="defect" Type="text" />
+    <Property Name="price" Type="decimal" />
+    <Property Name="date" Type="date" />
+    <Property Name="deadLine" Type="date" />
+  </EntityType>
+</Schema>

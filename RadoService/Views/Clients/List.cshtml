@@ -1,0 +1,29 @@
+﻿@using RadoService.Models;
+@model List<ClientsViewModel>
+
+@{
+    ViewBag.Title = "List";
+}
+<p class="description">Sample list of clients</p>
+<table id="client">
+    <tr>
+        <td>name</td>
+        <td>address</td>
+        <td>age</td>
+    </tr>
+@foreach (ClientsViewModel item in Model.OrderBy(x=>x.firstName))
+	{
+        
+        <tr>
+            <td>
+                <span>@item.firstName</span></td>
+            <td>
+                <span>@item.address</span></td>
+            <td>
+	            <span>@item.age</span> 
+            </td> 
+        </tr>
+	}
+    
+
+</table>

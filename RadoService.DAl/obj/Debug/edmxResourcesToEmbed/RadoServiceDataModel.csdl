@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RadoServiseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="RadoServiseEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Users" EntityType="RadoServiseModel.aspnet_Users" />
+    <EntitySet Name="Client" EntityType="RadoServiseModel.Client" />
+  </EntityContainer>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="firstName" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="lastName" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="address" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="age" />
+    <Property Type="Int32" Name="phone" />
+    <Property Type="String" Name="defect" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="price" />
+    <Property Type="DateTime" Name="date" Precision="0" />
+    <Property Type="DateTime" Name="deadLine" Precision="0" />
+  </EntityType>
+</Schema>

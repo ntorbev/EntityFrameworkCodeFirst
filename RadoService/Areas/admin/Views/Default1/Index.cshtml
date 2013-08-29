@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RadoService.DAl.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table style="border-collapse:collapse">
+    <tr>
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.age)
+        </th>        
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.defect)
+        </th>
+      @*  <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>*@
+        <th style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayNameFor(model => model.deadLine)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.age)
+        </td>        
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.defect)
+        </td>
+        <td style="width:150px;border: 1px solid #000;text-align:left;padding-left:2px;">
+            @Html.DisplayFor(modelItem => item.deadLine)
+        </td>
+        <td >
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
+
